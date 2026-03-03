@@ -433,6 +433,7 @@ select option{color: #0E1D26;}
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .header-inner { gap: 12px; }
   .nav-toggle { display: block; }
+  .main-nav { position: absolute; right: 18px; top: 70px; background: rgba(255,255,255,0.95); color: #111; padding: 10px; border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); display: none; flex-direction: column; }
   .main-nav a { color: #111; }
   .main-nav.show { display: flex; }
   .hero-content { margin-bottom: 60px; }

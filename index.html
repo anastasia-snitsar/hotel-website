@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Nord Hotel & Spa</title>
+
+  <link rel="stylesheet" href="visual/styles.css">
+</head>
+
+<body>
+  <header class="website-header">
+    <div class="overlay">
+      <div class="header-inner container">
+        <div class="brand">
+          <img src="images/logo.png" alt="Nord Hotel & Spa logo" class="logo" loading="lazy">
+          <h1>Nord Hotel & Spa </h1>
+        </div>
+
+        <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+          <a href="#rooms">Rooms</a>
+          <a href ="#spa">Spa</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+          <a href="login.html" id = "loginLink">Login</a>
+          <button id="logoutBtn" style="display:none;">Logout</button>
+          <button class="book-btn openBooking">Reservation</button>
+        </nav>
+        <button class="scrollBtn">^</button>
+      </div>
+
+      <div class="hero-content container">
+        <h2>Welcome to our hotel!</h2>
+        <p>Comfort and luxury in one place</p>
+        <a href="#rooms" class="btn">Check our rooms</a>
+      </div>
+    </div>
+  </header>
+
+  <!--KARUZELA-->
+  <section class="carousel" aria-label="Hotel photo gallery">
+    <div class="carousel-track-container">
+      <ul class="carousel-track">
+        <li class="carousel-slide current">
+          <img src="images/exterior.jpg" alt="Exterior view of the hotel" loading="lazy">
+        </li>
+        <li class="carousel-slide">
+          <img src="images/restaurant.jpg" alt="Hotel restaurant" loading="lazy">
+        </li>
+        <li class="carousel-slide">
+          <img src="images/spa.jpg" alt="Hotel spa" loading="lazy">
+        </li>
+      </ul>
+    </div>
+
+    <button class="carousel-button prev" aria-label="Previous slide">‹</button>
+    <button class="carousel-button next" aria-label="Next slide">›</button>
+
+    <div class="carousel-nav" aria-hidden="false">
+      <button class="carousel-indicator current" aria-label="Slide 1"></button>
+      <button class="carousel-indicator" aria-label="Slide 2"></button>
+      <button class="carousel-indicator" aria-label="Slide 3"></button>
+    </div>
+  </section>
+
+  <!--ARTYKULY POKOJE-->
+  <section id="rooms" class="container container-rooms">
+    <h2>OUR ROOMS</h2>
+    <div class="room-grid">
+      <!---ECONOMY ROOM-->  
+      <article class="room">
+        <div class="room-badge">300 PLN</div>
+        
+        <div class="room-carousel">
+          <button class="carousel-button prev" aria-label="Previous image" >‹</button>
+
+          <ul class="carousel-track">
+            <li class="carousel-slide current">
+              <img src="images/economy-room/room.png" alt="Economy room view 1" loading="lazy">
+            </li>
+            <li class="carousel-slide">
+              <img src="images/economy-room/bathroom.png" alt="Economy room view 2" loading="lazy">
+            </li>
+          </ul>
+          <button class="carousel-button prev" aria-label="Previous image">‹</button>
+          <button class="carousel-button next" aria-label="Next image">›</button>
+        </div>
+        <h4>Economy <span class="pill">Most affordable</span></h4>
+        <p>1-2 person · bathroom · Wi-Fi</p>
+        <p class="price"><span class="currency">PLN</span>300 <span class="per-night">per night</span></p>
+        <button class="book-btn openBooking">Reservation</button>
+      </article>
+
+      <!--COMFORT ROOM-->
+      <article class="room">
+        <div class="room-badge">500 PLN</div>
+        <div class="room-carousel">
+          <button class="carousel-button prev" aria-label="Previous image">‹</button>
+
+          <ul class="carousel-track">
+            <li class="carousel-slide current">
+              <img src="images/comfort-room/room.jpg" alt="Comfort room" loading="lazy">
+            </li>
+            <li class="carousel-slide">
+              <img src="images/comfort-room/bathroom.jpg" alt="Comfort room bathroom" loading="lazy">
+            </li>
+          </ul>
+          <button class="carousel-button prev" aria-label="Previous image">‹</button>
+          <button class="carousel-button next" aria-label="Next image">›</button>
+        </div>
+        <h4>Comfort <span class="pill">Popular</span></h4>
+        <p>1-2 person · bathroom · Wi-Fi · balcony</p>
+        <p class="price"><span class="currency">PLN</span>500 <span class="per-night">per night</span></p>
+        <button class="book-btn openBooking">Reservation</button>
+      </article>
+
+      <!--LUXURIOUS ROOM-->
+      <article class="room">
+        <div class="room-badge">800 PLN</div>
+        <div class="room-carousel">
+          <button class="carousel-button prev" aria-label="Previous image">‹</button>
+
+          <ul class="carousel-track">
+            <li class="carousel-slide current">
+              <img src="images/luxurious-room/room.jpg" alt="Luxurious room" loading="lazy">
+            </li>
+            <li class="carousel-slide">
+              <img src="images/luxurious-room/bathroom.jpg" alt="Luxurious room bathroom" loading="lazy">
+            </li>
+          </ul>
+          <button class="carousel-button prev" aria-label="Previous image">‹</button>
+          <button class="carousel-button next" aria-label="Next image">›</button>
+        </div>
+        <h4>Luxurious</h4>
+        <p>1-3 persons · bathroom · Wi-Fi · balcony · kitchen</p>
+        <p class="price"><span class="currency">PLN</span>800 <span class="per-night">per night</span></p>
+        <button class="book-btn openBooking">Reservation</button>
+      </article>
+
+      <!--APARTMENT-->
+      <article class="room">
+        <div class="room-badge">1500 PLN</div>
+        <div class="room-carousel">
+          <button class="carousel-button prev" aria-label="Previous image">‹</button>
+
+          <ul class="carousel-track">
+            <li class="carousel-slide current">
+              <img src="images/apartment/living-room.jpg" alt="Apartment living-room" loading="lazy">
+            </li>
+            <li class="carousel-slide">
+              <img src="images/apartment/bedroom.jpg" alt="Apartment bedroom" loading="lazy">
+            </li>
+            <li class="carousel-slide">
+              <img src="images/apartment/bathroom.jpg" alt="Apartment bathroom" loading="lazy">
+            </li>
+          </ul>
+          <button class="carousel-button prev" aria-label="Previous image">‹</button>
+          <button class="carousel-button next" aria-label="Next image">›</button>
+        </div>
+        <h4>Apartment</h4>
+        <p>3-4 persons · bathroom · Wi-Fi · balcony · kitchen</p>
+        <p class="price"><span class="currency">PLN</span>1500 <span class="per-night">per night</span></p>
+        <button class="book-btn openBooking">Reservation</button>
+      </article>
+    </div>
+  </section>
+
+  <!--SEKCJA SPA-->
+  <section id="spa" class="container-spa">
+    <div class="spa-info">
+      <h4>Discover Our</h4>
+      <h2>Spa & Wellness</h2>
+      <img src="images/spa_logo.png" alt="Spa logo" class="spa-logo" loading="lazy">
+      <p class="spa-intro">Relax and enjoy the view!</p>
+    </div>
+    <div class="spa-gallery">
+      <article class="spa-art">
+        <div class="spa-text">
+          <h5>SPA</h5>
+          <p>Relax in our spa with a sauna, steam room, and professional massages—perfect for recharging your body and mind.</p>
+        </div>
+        <div class="spa-media">
+          <img src="images/spa.jpg" alt="Spa photo" class="spa-photo" loading="lazy">
+        </div>
+      </article>
+      <article class="spa-art">
+        <div class="spa-media">
+          <img src="images/view.jpg" alt="Mountain view" class="spa-photo" loading="lazy">
+        </div>
+        <div class="spa-text">
+          <h5>Mountain View</h5>
+          <p>Enjoy breathtaking panoramic views.</p>
+        </div>
+      </article>
+      <article class="spa-art">
+        <div class="spa-text">
+          <h5>Pool</h5>
+          <p>Relax in our outdoor pool while admiring stunning mountain scenery—pure tranquility in every moment.</p>
+        </div>
+        <div class="spa-media">
+          <img src="images/pool.jpg" alt="Pool with mountain view" class="spa-photo" loading="lazy">
+        </div>
+      </article>
+    </div>
+  </section>
+
+
+  <!--GALERIA-->
+  <section id="gallery" class="container gallery">
+    <h3>Gallery</h3>
+    <div class="gallery-grid">
+      <img src="images/exterior.jpg" alt="Exterior" class="thumb">
+      <img src="images/restaurant.jpg" alt="Restaurant" class="thumb" >
+      <img src="images/spa.jpg" alt="Spa" class="thumb">
+      <img src="images/luxurious-room/room.jpg" alt="Lux room" class="thumb">
+      <img src="images/apartment/living-room.jpg" alt="Apartment living" class="thumb">
+      <img src="images/apartment/bathroom.jpg" alt="Apartment bathroom" class="thumb">
+      <img src="images/comfort-room/room.jpg" alt="Comfort room" class="thumb">
+      <img src="images/economy-room/room.png" alt="Economy room" class="thumb">
+    </div>
+  </section>
+
+  <!--MODAL REZERWACJI-->
+  <div id="bookingModal" class="modal" aria-hidden="true" aria-labelledby="bookingTitle" role="dialog">
+    <div class="modal-content">
+      <button class="close" id="closeBooking" aria-label="Close">✕</button>
+      <h3 id="bookingTitle">YOUR RESERVATION</h3>
+
+      <form id="bookingForm">
+        <label>
+          First and last name
+          <input type="text" name="name" placeholder="Jan Kowalski" required>
+        </label>
+
+        <label>
+          E-mail
+          <input type="email" name="email" placeholder="example@email.com" required>
+        </label>
+
+        <label>
+          Check-in date
+          <input type="date" name="check_in" required>
+        </label>
+
+        <label>
+          Check-out date
+          <input type="date" name="check_out" required>
+        </label>
+
+        <label>
+          Room type
+          <select name="room">
+            <option>Economy</option>
+            <option>Comfort</option>
+            <option>Luxurious</option>
+            <option>Apartment</option>
+          </select>
+        </label>
+
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <!--SEKCJA KONTAKT-->
+  <section id="contact" class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p><strong>Address:</strong> <br>Ul. Przykładowa 12, 00-000 Miasto</p>
+        <p><strong>Phone:</strong> <br>+48 123 456 789</p>
+        <p><strong>E-mail:</strong> <br>reception@nordhotel.com</p>
+        <p><strong>Open hours:</strong> <br>Mon-Sun 7:00 - 22:00</p>
+      </div>
+      <div class="contact-form-box">
+        <h3>Send a Message</h3>
+        <form class="form-box">
+          <label>
+            Name:
+            <input type="text" name="name" placeholder="Enter your name" required>
+          </label>
+          <label>
+            E-mail:
+            <input type="email" name="email" placeholder="example@email.com" required>
+          </label>
+          <label>
+            Message:
+            <textarea name="message" rows="5" placeholder="Write your message here" required></textarea>
+          </label>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Nord Hotel & Spa</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
